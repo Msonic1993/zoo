@@ -19,12 +19,17 @@ git clone https://github.com/Msonic1993/zoo.git
 ```bash
 cd zoo
 ```
-3. Install dependencies using Composer:
+3. Install dependencies using Composer on Docker container
+
 ```bash
-composer install
+docker-compose up -d
+```
+
+```bash
+docker exec zoo_php_1 composer install
 ```
 4. Run the application:
 
 ```bash
-php index.php
+docker exec zoo_php_1 php index.php
 ```

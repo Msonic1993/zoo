@@ -6,7 +6,6 @@ namespace Zoo\Domain;
 
 use Zoo\Domain\Animal\Herbivore;
 
-
 class Elephant extends Herbivore
 {
 }

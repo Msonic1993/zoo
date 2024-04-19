@@ -34,5 +34,3 @@ foreach ($animals as $animal) {
 
 $zooApp->feedAnimals((new Food(FeedType::MEAT->value)));
 $zooApp->groomFurryAnimals();
-
-

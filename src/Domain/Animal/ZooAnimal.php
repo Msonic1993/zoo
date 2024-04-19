@@ -25,5 +25,4 @@ abstract class ZooAnimal implements Animal
     }
 
     abstract public function feed(Food $foodType): void;
-
 }

@@ -8,13 +8,10 @@ use Zoo\Domain\Food\Food;
 
 abstract class ZooAnimal implements Animal
 {
-    protected string $name;
-    protected string $species;
-
-    public function __construct(string $name, string $species)
-    {
-        $this->name = $name;
-        $this->species = $species;
+    public function __construct(
+        protected string $name,
+        protected string $species
+    ) {
     }
 
     public function getName(): string

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Zoo\Application\ZooApplication;
 use Zoo\Domain\Elephant;
+use Zoo\Domain\Enum\FeedType;
 use Zoo\Domain\Food\Food;
 use Zoo\Domain\Fox;
 use Zoo\Domain\Rabbit;
@@ -31,7 +32,7 @@ foreach ($animals as $animal) {
     echo $animal->getSpecies() . ': ' . $animal->getName() . "\n";
 }
 
-$zooApp->feedAnimals((new Food('meat')));
+$zooApp->feedAnimals((new Food(FeedType::MEAT->value)));
 $zooApp->groomFurryAnimals();
 
 

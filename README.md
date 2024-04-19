@@ -13,11 +13,11 @@ To run the application, you need:
 ## Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/zoo-application.git
+git clone https://github.com/Msonic1993/zoo.git
 ```
 2. Navigate to the project directory:
 ```bash
-cd zoo-application
+cd zoo
 ```
 3. Install dependencies using Composer:
 ```bash
